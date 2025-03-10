@@ -5,6 +5,8 @@
     ./wezterm.nix
     ./rofi.nix
     ./hyprland.nix
+    ./packages.nix
+    ./enablepackages.nix 
   ];
 
   git.enable = lib.mkDefault true;

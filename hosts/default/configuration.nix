@@ -67,7 +67,6 @@
   environment.systemPackages = with pkgs; [
     home-manager
     vim
-    rofi
   ];
 
   system.stateVersion = "24.11";
