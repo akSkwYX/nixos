@@ -43,6 +43,8 @@
 
   # Configure console keymap
   console.useXkbConfig = true;
+ 
+  nix.nixPath = ["nixos-config=/home/skwyx/nixos"];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -60,9 +62,6 @@
       "skwyx" = import ./home.nix;
     };
   };
-
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
     home-manager
