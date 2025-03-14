@@ -7,8 +7,6 @@
   config = lib.mkIf config.fish.enable {  
     programs.fish = {
       enable = true;
-
-      
     };
     users.defaultUserShell = pkgs.fish;
   };

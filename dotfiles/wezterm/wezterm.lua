@@ -1,16 +1,9 @@
 local wezterm = require 'wezterm'
-local mux = wezterm.mux
-
-wezterm.on('gui-startup', function(cmd)
-   local _, _, window = mux.spawn_window(cmd or {})
-   local gui_window = window:gui_window();
-   gui_window:maximize()
-end
-)
 
 return{
    font = wezterm.font 'JetBrains Mono',
    color_scheme = 'Monokai (base16)',
+   hide_tab_bar_if_only_one_tab = true,
    background = {
       {
       source = {File = '/home/skwyx/Pictures/Wallpapers/vi-zaun.png'},

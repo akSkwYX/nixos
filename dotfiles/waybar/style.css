@@ -1,0 +1,21 @@
+* {
+    border: none;
+    font-family: JetBrains Mono, monospace;
+    font-size: 16px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+#workspaces button {
+    background: transparent;
+    color: white;
+}
+
+#battery {
+    background: transparent;
+    color: white;
+}

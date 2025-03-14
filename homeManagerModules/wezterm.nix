@@ -10,8 +10,9 @@
     ]; 
     
     home.file = {
-     ".wezterm.lua".source = ../dotfiles/wezterm.lua;
-     ".wezterm.lua".target = ".config/.wezterm.lua";
+     ".wezterm".source = ../dotfiles/wezterm;
+     ".wezterm".target = ".config/wezterm";
+     ".wezterm".recursive = true;
     };
   };
 }

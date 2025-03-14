@@ -28,6 +28,8 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
+    BROWSER = "vivaldi";
+    TERMINAL = "wezterm";
   };
 
   # Let Home Manager install and manage itself.
