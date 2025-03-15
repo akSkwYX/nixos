@@ -12,6 +12,7 @@
       pkgs.libnotify
       pkgs.swaynotificationcenter
       pkgs.hyprlock
+      pkgs.hypridle
     ];
 
     home.file = lib.mkIf config.hyprland.enable {
