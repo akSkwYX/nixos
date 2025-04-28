@@ -7,6 +7,7 @@
     ./enablepackages.nix 
     ./latex.nix
     ./nvim.nix
+    ./fish.nix
   ];
 
   git.enable = true;
@@ -14,4 +15,5 @@
   hyprland.enable = true;
   latex.enable = true;
   nvim.enable = true;
+  fish.enable = lib.mkDefault true;
 }

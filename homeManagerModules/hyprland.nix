@@ -13,6 +13,9 @@
       pkgs.swaynotificationcenter
       pkgs.hyprlock
       pkgs.hypridle
+      pkgs.hyprcursor
+      pkgs.cliphist
+      pkgs.kdePackages.dolphin
     ];
 
     home.file = lib.mkIf config.hyprland.enable {
@@ -23,6 +26,10 @@
       ".rofi".source = ../dotfiles/rofi;
       ".rofi".target = ".config/rofi";
       ".rofi".recursive = true;
+
+      ".rofi-themes".source = ../dotfiles/local/share/rofi/themes;
+      ".rofi-themes".target = ".local/share/rofi/themes";
+      ".rofi-themes".recursive = true;
 
       ".waybar".source = ../dotfiles/waybar;
       ".waybar".target = ".config/waybar";
