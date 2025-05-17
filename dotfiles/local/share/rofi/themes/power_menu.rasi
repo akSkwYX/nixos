@@ -1,6 +1,6 @@
 configuration {
-    location:                       0;
-    font:                           "Font Awesome 30 Free:style=regular";
+    location:0;
+    font:"Font Awesome 100 Free:style=regular";
 }
  
  

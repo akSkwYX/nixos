@@ -15,7 +15,6 @@
         "network",
         "battery",
         "clock",
-        "powermenu",
     ],
     "hyprland/workspaces": {
         "format": "{icon}",

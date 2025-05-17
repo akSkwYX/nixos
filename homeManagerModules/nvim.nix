@@ -11,9 +11,9 @@
     ]; 
     
     home.file = {
-     ".neovim".source = ../dotfiles/nvim;
-     ".neovim".target = ".config/nvim";
-     ".neovim".recursive = true;
+      ".nvim".source = ../dotfiles/nvim;
+      ".nvim".target = ".config/nvim";
+      ".nvim".recursive = true;
     };
   };
 }

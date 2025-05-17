@@ -10,4 +10,5 @@
   sddm.enable = lib.mkDefault true;
   nerdfonts.enable = lib.mkDefault true;
   awesomefont.enable = lib.mkDefault true;
+  jetbrainsfont.enable = lib.mkDefault true;
 }

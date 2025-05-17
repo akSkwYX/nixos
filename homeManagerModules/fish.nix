@@ -9,8 +9,8 @@
     programs.fish = {
       enable = true;
       shellAliases = {
-        tipe = "cd $home/Cours/TIPE/remakeTIPE && nvim";
-        config = "cd $home/.nixos && nvim";
+        tipe = "cd /home/skwyx/Cours/TIPE && nvim";
+        config = "cd /home/skwyx/.nixos && nvim";
       };
     };
   };

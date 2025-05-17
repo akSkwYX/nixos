@@ -49,11 +49,13 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
+  programs.fish.enable = true;
   users.users.skwyx = {
     isNormalUser = true;
     description = "SkwYX";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
+    shell = pkgs.fish;
   };
 
   home-manager = {
@@ -66,6 +68,7 @@
   environment.systemPackages = with pkgs; [
     home-manager
     vim
+    wl-clipboard
   ];
 
   system.stateVersion = "24.11";

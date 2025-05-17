@@ -1,10 +1,9 @@
-{ pkgs, lib, config, ... }:
+{ pkgs, lib, config, inputs, ... }:
 {
   options = {
     anki.enable = lib.mkEnableOption "enable anki";
     "1password".enable = lib.mkEnableOption "enable 1password";
     c.enable = lib.mkEnableOption "enable c";
-    vivaldi.enable = lib.mkEnableOption "enable vivaldi";
     ocaml.enable = lib.mkEnableOption "enable ocaml and all tools";
     javascript.enable = lib.mkEnableOption "enable nodejs";
     lua.enable = lib.mkEnableOption "enable lua";
@@ -24,7 +23,6 @@
       ++ lib.optional config.c.enable pkgs.gccgo14
       ++ lib.optional config.c.enable pkgs.harper
       ++ lib.optional config.c.enable pkgs.cppcheck
-      ++ lib.optional config.vivaldi.enable pkgs.vivaldi
       ++ lib.optional config.ocaml.enable pkgs.ocaml
       ++ lib.optional config.ocaml.enable pkgs.dune_3
       ++ lib.optional config.ocaml.enable pkgs.ocamlPackages.ocaml-lsp

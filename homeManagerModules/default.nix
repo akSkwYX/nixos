@@ -8,6 +8,7 @@
     ./latex.nix
     ./nvim.nix
     ./fish.nix
+    ./firefox.nix
   ];
 
   git.enable = true;
@@ -16,4 +17,5 @@
   latex.enable = true;
   nvim.enable = true;
   fish.enable = lib.mkDefault true;
+  firefox.enable = true;
 }
